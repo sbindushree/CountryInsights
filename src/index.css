@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./assets/world-map.jpg'), linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+  background-blend-mode: overlay;
+  background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
