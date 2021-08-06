@@ -6,7 +6,7 @@ import '../App.css';
 
 
 const Home = ({ countries }) => {
-    const [language, setLanguage] = useState("");
+    const [region, setRegion] = useState("");
     const [filteredCountry, setFilteredCountry] = useState("");
     const searchParam = ["capital", "name"];
 
@@ -15,7 +15,7 @@ const Home = ({ countries }) => {
       };
 
       const handleChangeReg = (e) => {
-        setLanguage(e.target.value);
+        setRegion(e.target.value);
       };
 
       const search = (items) =>
@@ -27,8 +27,7 @@ const Home = ({ countries }) => {
       );
 
       const activeCountries = search(countries).filter((country) => {
-        
-        return language === "" || country.languages.filter(item => item.iso639_1 === language) > 0 ;
+        return region === "" || country.region === region;
       });
 
 
